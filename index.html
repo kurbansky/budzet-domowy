@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          class="logo"
+          src="./assets/money.jpg"
+          alt="The man is standing on a money"
+        />
+        <h1 class="header-heading">Bilans wynosi zero</h1>
+      </header>
+      <main class="budget">
+        <section class="incomeareacontainer">
+          <h2>Przychody</h2>
+          <input id="nameIncome" placeholder="Nazwa przychodu" />
+          <input type="number" id="amountIncome" placeholder="Kwota" />
+          <button class="btnAddIncome">Dodaj</button>
+          <ul id="income-container"></ul>
+          <p>Suma przychodów <span id="input-sum"></span> PLN</p>
+        </section>
+
+        <section class="expenseareacontainer">
+          <h2>Wydatki</h2>
+          <input id="nameExpenses" placeholder="Nazwa wydatku" />
+          <input type="number" id="amountExpenses" placeholder="Kwota" />
+          <button class="btnAddExpense">Dodaj</button>
+          <ul id="expense-container"></ul>
+          <p>Suma wydatków <span id="expense-sum"></span> PLN</p>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
