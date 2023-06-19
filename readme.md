@@ -2,7 +2,7 @@
 
 This is a simple javascript budget app (project from the bootcamp).
 
-> Live demo [_here_]().
+> Live demo [_here_](https://delightful-cat-64cc6c.netlify.app/).
 
 ## Table of contents
 
