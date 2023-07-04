@@ -39,13 +39,78 @@ body {
   padding: 50px;
 }
 
-.incomeareacontainer {
-  margin: 0 14px;
+.inputContainer {
+  margin: 0 30px;
+  padding: 10px;
 }
 
-.amount {
+.incomeWrapper,
+.expenseWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.space {
+  margin-right: 10px;
+}
+
+#amountIncome,
+#amountExpenses {
+  width: 100px;
+}
+
+.inputP {
+  color: green;
+}
+
+.expenseP {
+  color: red;
+}
+
+.inputP,
+.expenseP {
+  font-size: 20px;
+}
+
+.btnAddIncome,
+.btnAddExpense {
+  border: 3px outset #7e3a4f;
+  background-color: goldenrod;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.btnAddIncome:hover,
+.btnAddExpense:hover {
+  background-color: #f082ac;
+}
+
+.editButton,
+.deleteButton,
+.editButtonExp,
+.deleteButtonExp {
+  justify-content: space-between;
+  border-radius: 8px;
   margin-left: 5px;
 }
-.expenseareacontainer {
-  margin: 0 14px;
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.editButton,
+.deleteButton {
+  background-color: lightpink;
+}
+
+.editButtonExp,
+.deleteButtonExp {
+  background-color: rgb(224, 201, 142);
 }

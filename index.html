@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Domowy budżet</title>
   </head>
   <body>
     <div class="container">
@@ -24,22 +24,36 @@
         <h1 class="header-heading">Bilans wynosi zero</h1>
       </header>
       <main class="budget">
-        <section class="incomeareacontainer">
+        <section class="inputContainer">
           <h2>Przychody</h2>
-          <input id="nameIncome" placeholder="Nazwa przychodu" />
-          <input type="number" id="amountIncome" placeholder="Kwota" />
-          <button class="btnAddIncome">Dodaj</button>
+          <div class="incomeWrapper">
+            <form>
+              <input id="nameIncome" placeholder="Nazwa przychodu" />
+              <input
+                type="number"
+                step="0.01"
+                id="amountIncome"
+                placeholder="Kwota"
+              />
+            </form>
+            <button class="btnAddIncome">Dodaj</button>
+          </div>
           <ul id="income-container"></ul>
-          <p>Suma przychodów <span id="input-sum"></span> PLN</p>
+          <p class="inputP">Suma przychodów <span id="input-sum"></span> PLN</p>
         </section>
-
-        <section class="expenseareacontainer">
+        <section class="inputContainer">
           <h2>Wydatki</h2>
-          <input id="nameExpenses" placeholder="Nazwa wydatku" />
-          <input type="number" id="amountExpenses" placeholder="Kwota" />
-          <button class="btnAddExpense">Dodaj</button>
+          <div class="expenseWrapper">
+            <form>
+              <input id="nameExpenses" placeholder="Nazwa wydatku" />
+              <input type="number" id="amountExpenses" placeholder="Kwota" />
+            </form>
+            <button class="btnAddExpense">Dodaj</button>
+          </div>
           <ul id="expense-container"></ul>
-          <p>Suma wydatków <span id="expense-sum"></span> PLN</p>
+          <p class="expenseP">
+            Suma wydatków <span id="expense-sum"></span> PLN
+          </p>
         </section>
       </main>
     </div>

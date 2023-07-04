@@ -2,7 +2,7 @@
 
 This is a simple javascript budget app (project from the bootcamp).
 
-> Live demo [_here_]().
+>
 
 ## Table of contents
 
