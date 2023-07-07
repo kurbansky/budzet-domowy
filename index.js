@@ -93,7 +93,7 @@ btnAdd.addEventListener("click", () => {
 
     inputAmounts = inputAmounts + editedAmount;
     inputAmounts = inputAmounts - previousAmount;
-    inputSum.innerText = inputAmounts;
+    inputSum.innerText = inputAmounts.toFixed(2);
 
     updateBalanceSum();
   });
@@ -108,17 +108,14 @@ btnAdd.addEventListener("click", () => {
   li.appendChild(btnDeleteIncome);
 
   btnDeleteIncome.addEventListener("click", () => {
-    console.log(inputAmounts);
-    console.log(Number(spanAmount.innerText));
-    inputAmounts = inputAmounts - Number(spanAmount.innerText);
-    console.log(inputAmounts);
-    inputSum.innerText = inputAmounts;
+    inputAmounts = inputAmounts - Number(spanAmount.innerText).toFixed(2);
+    inputSum.innerText = inputAmounts.toFixed(2);
     li.remove();
     updateBalanceSum();
   });
 
   inputAmounts = inputAmounts + Number(Number(inputAmount.value).toFixed(2));
-  inputSum.innerText = inputAmounts;
+  inputSum.innerText = inputAmounts.toFixed(2);
 
   inputName.value = "";
   inputAmount.value = "";
@@ -187,7 +184,7 @@ btnAddExpense.addEventListener("click", () => {
 
     expenseAmounts = expenseAmounts + editedExpense;
     expenseAmounts = expenseAmounts - previousExpense;
-    expenseSum.innerText = expenseAmounts;
+    expenseSum.innerText = expenseAmounts.toFixed(2);
 
     updateBalanceSum();
   });
@@ -204,14 +201,14 @@ btnAddExpense.addEventListener("click", () => {
   btnDeleteExpense.addEventListener("click", () => {
     expenseAmounts =
       expenseAmounts - Number(Number(spanExpenseAmount.innerText).toFixed(2));
-    expenseSum.innerText = expenseAmounts;
+    expenseSum.innerText = expenseAmounts.toFixed(2);
     li.remove();
     updateBalanceSum();
   });
 
   expenseAmounts =
     expenseAmounts + Number(Number(expenseAmount.value).toFixed(2));
-  expenseSum.innerText = expenseAmounts;
+  expenseSum.innerText = expenseAmounts.toFixed(2);
 
   expenseName.value = "";
   expenseAmount.value = "";
