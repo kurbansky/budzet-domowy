@@ -93,7 +93,7 @@ btnAdd.addEventListener("click", () => {
 
     inputAmounts = inputAmounts + editedAmount;
     inputAmounts = inputAmounts - previousAmount;
-    inputSum.innerText = inputAmounts.toFixed(2);
+    inputSum.innerText = Math.abs(inputAmounts.toFixed(2));
 
     updateBalanceSum();
   });
@@ -184,7 +184,7 @@ btnAddExpense.addEventListener("click", () => {
 
     expenseAmounts = expenseAmounts + editedExpense;
     expenseAmounts = expenseAmounts - previousExpense;
-    expenseSum.innerText = expenseAmounts.toFixed(2);
+    expenseSum.innerText = Math.abs(expenseAmounts.toFixed(2));
 
     updateBalanceSum();
   });
